@@ -1,0 +1,29 @@
+.output-area {
+	overflow-wrap: break-word;
+}
+
+.overline {
+	border-top: 5px solid;
+}
+
+.double-overline {
+	border-top: 15px double;
+}
+
+.triple-overline {
+	border-top: 15px double;
+}
+
+.triple-overline::before {
+	content: attr(data-letter);
+	position: absolute;
+	color: rgba(0, 0, 0, 0);
+	border-bottom: 5px solid black;
+	margin-top:-118px;
+}
+
+.output-area {
+	font-family: Times New Roman;
+	text-align: center;
+	font-size:500%;
+}
