@@ -1,0 +1,261 @@
+<html lang="EN">
+
+			<!-- Head -->
+
+<head>
+
+		<!-- Title -->
+
+	<title>Roman Numerals</title>
+	
+	<meta property="og:title" content="Roman Numeral/Integer Lister">
+
+		<!-- Basic HTTP Equiv Tags -->
+
+	<meta http-equiv="content-type" content="text/css/javascript/php; charset=UTF-8">
+	<meta http-equiv="content-language" content="EN">
+	<meta http-equiv="content-script-type" content="text/php">
+	<meta http-equiv="content-style-type" content="text/css">
+
+		<!-- Article Information -->
+		
+	<meta name="designer" content="Benjamin Tepolt">
+	<meta name="generator" content="Green Gluon CMS (GG-CMS): Version 1.00">
+	<meta name="publisher" content="Green Gluon CMS (GG-CMS)">
+	<meta name="progid" content="GG-CMS V. 1.00">
+
+		<!-- Server and Technical Details -->
+
+	<meta name="template" content="html-templates/base-template.html">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- WebApp Information -->
+
+	<meta name="msapplication-allowDomainApiCalls" content="true">
+	<meta name="msapplication-allowDomainMetaTags" content="true">
+	<link type="text/css" rel="stylesheet" href="roman-numerals.css">
+
+		<!-- Javascript -->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="roman-numerals.js"></script>
+	<script src="roman-numerals-unit-tests.js"></script>
+
+</head>
+
+			<!-- Body -->
+
+<body style="font-family:arial;">
+
+<center>
+
+<div id="header_backgroundimageurl"  class="horizontal-center width-100percent border-2px margin-top-5px background-color-6495ED">
+
+<table width="100%"><tr><td width="1">
+	<div style="display: inline-block;margin-top:15px;" class="span-header-1"><h1 style="margin:5px;padding:5px;display: inline-block;border:black 2px solid;background-color:#FFFFFF;" class="header-1 padding-0px margin-0px horizontal-center vertical-center padding-top-22px margin-bottom-10px">List Roman Numerals - Roman Numeral Lister</h1></div>
+
+</td></tr></table>
+
+</div>
+
+<div class="width-50percent border-1px horizontal-center margin-top-22px">
+
+<div class="width-95percent horizontal-left">
+
+					<div class="padding-5px"><span class="font-family-tahoma"><b>Instructions :</b> Use this web app to list Roman Numerals or integers.</span></div>
+
+	</div>
+
+	</div>
+
+<div class="width-50percent border-1px horizontal-center margin-top-22px">
+
+<div class="width-95percent horizontal-left">
+
+					<div class="padding-5px"><span class="font-family-tahoma"><b>Status :</b> <span id="status-text">Waiting for User</span>.</span></div>
+
+	</div>
+
+	</div>
+
+		<table class="horizontal-center padding-top-22px" width="1">
+
+			<tr>
+
+				<td valign="top">
+
+					<center><h4 class="margin-0px padding-0px font-family-tahoma">Numbers</h4></center>
+
+				</td>
+
+				<td valign="top">
+
+					<center><h4 class="margin-0px padding-0px font-family-tahoma">Minimum</h4></center>
+
+				</td>
+				
+				<td valign="top">
+
+					<center><h4 class="margin-0px padding-0px font-family-tahoma">Maximum</h4></center>
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td valign="top">
+
+					<select name="direction" id="direction" class="direction">
+						<option value="roman-numeral">Roman Numeral</option>
+						<option value="integer">Integer</option>
+					</select>
+
+				</td>
+
+				<td valign="top" width="40%">
+
+					<input type="text" name="input-area-min" id="input-area-min" class="input-area-min" value="1">
+				
+				</td>
+
+				<td valign="top" width="40%">
+
+					<input type="text" name="input-area-max" id="input-area-max" class="input-area-max" value="3999">
+				
+				</td>
+			
+			</tr>
+			
+		</table>
+		
+					<p class="output-area">
+						<span cols="50" rows="30" id="output-area" class="output-area"></span>
+					</p>
+
+<div class="width-90percent horizontal-center padding-top-22px">
+
+					<button id="list-numbers" class="list-numbers margin-5px">List Numbers</button><br>
+
+					<select  name="casing" id="casing" class="casing margin-5px">
+
+						<option value="upper" title="Uppercase the Roman numerals, if they appear in the output.">Uppercase Roman Numerals</option>
+
+						<option value="lowercase" title="Lowercase the Roman numerals, if they appear in the output.">Lowercase Roman Numerals</option>
+
+					</select>
+	</div>
+
+
+<table border="1" style="margin:5px;">
+	<tr>
+		<td>
+			Symbol
+		</td>
+		<td>
+			Value
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			I
+		</td>
+		<td align="center">
+			1
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			V
+		</td>
+		<td align="center">
+			5
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			X
+		</td>
+		<td align="center">
+			10
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			L
+		</td>
+		<td align="center">
+			50
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			C
+		</td>
+		<td align="center">
+			100
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			D
+		</td>
+		<td align="center">
+			500
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			M
+		</td>
+		<td align="center">
+			1000
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			O
+		</td>
+		<td align="center">
+			Single Line Over;<br>
+			Multiply next number by<br>x1,000
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			U
+		</td>
+		<td align="center">
+			Double Line Over;<br>
+			Multiply next number by<br>x1,000,000
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			T
+		</td>
+		<td align="center">
+			Triple Line Over;<br>
+			Multiply next number by<br>x1,000,000,000
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			A
+		</td>
+		<td align="center">
+			Quadruple Line Over;<br>
+			Multiply next number by<br>x1,000,000,000,000
+		</td>
+	</tr>
+</table>
+
+
+<div class="width-95percent horizontal-center margin-top-14px border-2px">
+
+<div class="padding-10px horizontal-center font-family-arial background-color-6495ED"><span class="font-family-verdana">Home<span class="padding-left-15px padding-right-15px">|</span><a href="/about.php">About</a><span class="padding-left-15px padding-right-15px">|</span><a href="/contact.php">Contact</a><span class="padding-left-15px padding-right-15px">|</span><a href="/languages.php">Languages</a><span class="padding-left-15px padding-right-15px">|</span><a href="/privacy.php">Privacy Policy</a></span></div></div>
+
+</body>
+
+</html>
