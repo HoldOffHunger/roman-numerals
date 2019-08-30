@@ -6,6 +6,8 @@
 
 Covers numbers in the trillions, with thousands of unit tests and tons of Roman Numeral functionality.
 
+<img src="./image/roman-numerals-logo.jpg" width="600" />
+
 ## TOC
 
 1. [TOC](#toc)
